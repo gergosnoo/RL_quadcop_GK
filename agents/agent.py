@@ -198,7 +198,7 @@ class DDPG:
         self.gamma = 0.99  # discount factor
         self.tau = 0.001  # for soft update of target parameters
 
-        # Score parameters
+        # Score tracker and learning parameters
         self.total_reward = 0
         self.count = 0
         self.best_score = -np.inf
